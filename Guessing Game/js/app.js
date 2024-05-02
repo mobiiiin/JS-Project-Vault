@@ -13,3 +13,10 @@ function buildNumber() {
   let randomNumber = Math.floor(Math.random() * 100)
   console.log(randomNumber);
 }
+
+// this function for getting input from the user
+function gettingInput() {
+    let entrance = Number(prompt("be nazaet add chande haan?"))
+    console.log(entrance);
+    compare()
+  }
