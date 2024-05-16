@@ -32,3 +32,28 @@ function settings() {
   resetBtn.disabled = true
 
 }
+
+// 
+function nemidonam() {
+  checkInputsValue(this)
+
+  if (this.type === "email") {
+    checkInputEmail(this);
+  }
+
+  activeSendBtn()
+  activeResetBtn()
+}
+
+// To check whether the inputs are empty or not
+function checkInputsValue(inputs) {
+  if (inputs.value.length > 0) {
+    inputs.style.borderBottomColor = "green";
+    inputs.classList.add("success")
+  }
+  else {
+    inputs.style.borderBottomColor = "red";
+    inputs.classList.remove("error")
+
+  }
+}
