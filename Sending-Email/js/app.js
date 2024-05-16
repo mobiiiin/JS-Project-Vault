@@ -90,3 +90,18 @@ function activeResetBtn() {
   e.preventDefault()
   form.reset()
 }
+// This function is for submitting the form, that is, after clicking the send button, a gif will be displayed and sent
+function submitForm() {
+  spinner.style.display = "block";
+  sendEmailImg.src = "img/mail.gif";
+  sendEmailImg.style.display = "block";
+
+  setTimeout(() => {
+    spinner.style.display = "none";
+    loaders.appendChild(sendEmailImg);
+    setTimeout(() => {
+      sendEmailImg.remove();
+      sendEmailImg.style.display = "none"
+    }, 3000);
+  }, 3000);
+}
