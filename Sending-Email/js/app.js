@@ -57,3 +57,16 @@ function checkInputsValue(inputs) {
 
   }
 }
+
+// To check whether the email input has "@" or not
+function checkInputEmail(inputs) {
+  if (inputs.value.includes("@")) {
+    inputs.style.borderBottomColor = "green";
+    inputs.classList.add("success")
+
+  } else {
+    inputs.style.borderBottomColor = "red";
+    inputs.classList.remove("error")
+
+  }
+}
