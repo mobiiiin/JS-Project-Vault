@@ -70,3 +70,21 @@ function checkInputEmail(inputs) {
 
   }
 }
+
+// Activate send button
+function activeSendBtn() {
+  if (m.value !== "") {
+    if (error.length === 0) {
+      sendBtn.disabled = false;
+    }
+  }
+}
+
+// Activating the resetBtn and resetting the form
+function activeResetBtn() {
+  if (m.value !== "") {
+    if (error.length === 0) {
+      resetBtn.disabled = false;
+    }
+  }
+}
