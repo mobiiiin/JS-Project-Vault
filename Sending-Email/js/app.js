@@ -87,4 +87,6 @@ function activeResetBtn() {
       resetBtn.disabled = false;
     }
   }
+  e.preventDefault()
+  form.reset()
 }
