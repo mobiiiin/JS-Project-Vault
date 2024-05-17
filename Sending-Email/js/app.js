@@ -9,6 +9,7 @@ const sendBtn = document.querySelector("#sendBtn"),
   spinner = document.querySelector("#spinner"),
   error = document.querySelectorAll(".error")
 
+
 // Creating a variable in JS
 let m = subject && email && message;
 let sendEmailImg = document.createElement("img");
@@ -36,13 +37,13 @@ function settings() {
 // 
 function nemidonam() {
   checkInputsValue(this)
+  // activeResetBtn(this)
 
   if (this.type === "email") {
     checkInputEmail(this);
   }
-
-  activeSendBtn()
-  activeResetBtn()
+// console.log("mmmm");
+  // activeSendBtn()
 }
 
 // To check whether the inputs are empty or not
@@ -50,12 +51,15 @@ function checkInputsValue(inputs) {
   if (inputs.value.length > 0) {
     inputs.style.borderBottomColor = "green";
     inputs.classList.add("success")
+    activeResetBtn()
   }
   else {
     inputs.style.borderBottomColor = "red";
     inputs.classList.remove("error")
+    activeResetBtn()
 
   }
+  // activeSendBtn()
 }
 
 // To check whether the email input has "@" or not
@@ -63,33 +67,45 @@ function checkInputEmail(inputs) {
   if (inputs.value.includes("@")) {
     inputs.style.borderBottomColor = "green";
     inputs.classList.add("success")
+    activeSendBtn()
+    // console.log("object");
 
   } else {
     inputs.style.borderBottomColor = "red";
     inputs.classList.remove("error")
-
+    // sendBtn.disabled = true
+    activeSendBtn()
+    // console.log("object");
   }
 }
 
 // Activate send button
 function activeSendBtn() {
-  if (m.value !== "") {
-    if (error.length === 0) {
-      sendBtn.disabled = false;
-    }
+  if (error.length === 0) {
+    sendBtn.disabled = false;
   }
+  else {
+    sendBtn.disabled = true
+  }
+  console.log("error");
 }
 
 // Activating the resetBtn and resetting the form
 function activeResetBtn() {
-  if (m.value !== "") {
+  if (message.value !== "" || subject.value !== "" || email.value !== "") {
     if (error.length === 0) {
       resetBtn.disabled = false;
     }
   }
+
+  else {
+    resetBtn.disabled = true
+  }
+
   e.preventDefault()
   form.reset()
 }
+
 // This function is for submitting the form, that is, after clicking the send button, a gif will be displayed and sent
 function submitForm() {
   spinner.style.display = "block";
