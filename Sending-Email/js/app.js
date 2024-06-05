@@ -1,31 +1,30 @@
 // Select in to html
-const sendBtn = document.querySelector("#sendBtn"),
-  email = document.querySelector("#email"),
+const email = document.querySelector("#email"),
   subject = document.querySelector("#subject"),
   message = document.querySelector("#message"),
   resetBtn = document.querySelector("#resetBtn"),
-  form = document.querySelector("#email-form"),
-  loaders = document.querySelector("#loaders"),
+  sendBtn = document.querySelector("#sendBtn"),
+  success = document.querySelector(".success"),
+  form = document.querySelector("form"),
+  error = document.querySelectorAll(".error"),
   spinner = document.querySelector("#spinner"),
-  error = document.querySelectorAll(".error")
-
-
-// Creating a variable in JS
-let m = subject && email && message;
-let sendEmailImg = document.createElement("img");
+  loaders = document.querySelector("#loaders")
+  ;
 
 // this function just for events
 function eventListener() {
-  document.addEventListener("DOMContentLoaded", settings);
-  email.addEventListener("blur", nemidonam);
-  subject.addEventListener("blur", nemidonam);
-  message.addEventListener("blur", nemidonam);
-  sendBtn.addEventListener("click", activeSendBtn);
-  resetBtn.addEventListener("click", activeResetBtn);
-  form.addEventListener("submit", submitForm);
-  // sendBtn.addEventListener("click",submitForm)
+  document.addEventListener("DOMContentLoaded", appInit)
+  email.addEventListener("blur", checkInput)
+  subject.addEventListener("blur", checkInput)
+  message.addEventListener("blur", checkInput)
+  resetBtn.addEventListener("click", resetForm)
+  // form.addEventListener("submit", submitForm)
+  form.addEventListener("click", submitForm)
+
+
 }
 eventListener()
+
 
 // For project settings, we can put some other things in it
 function settings() {
@@ -42,7 +41,7 @@ function nemidonam() {
   if (this.type === "email") {
     checkInputEmail(this);
   }
-// console.log("mmmm");
+  // console.log("mmmm");
   // activeSendBtn()
 }
 
@@ -59,7 +58,7 @@ function checkInputsValue(inputs) {
     activeResetBtn()
 
   }
-  // activeSendBtn()
+  // activeSendBtn()/
 }
 
 // To check whether the email input has "@" or not
@@ -69,6 +68,7 @@ function checkInputEmail(inputs) {
     inputs.classList.add("success")
     activeSendBtn()
     // console.log("object");
+    // sendBtn.disabled = false
 
   } else {
     inputs.style.borderBottomColor = "red";
@@ -77,13 +77,15 @@ function checkInputEmail(inputs) {
     activeSendBtn()
     // console.log("object");
   }
+  // console.log(error);
 }
-
 // Activate send button
 function activeSendBtn() {
-  if (error.length === 0) {
+
+  if (email.value.includes("@")) {
     sendBtn.disabled = false;
   }
+
   else {
     sendBtn.disabled = true
   }
@@ -101,6 +103,15 @@ function activeResetBtn() {
   else {
     resetBtn.disabled = true
   }
+
+
+
+
+
+
+
+
+
 
   e.preventDefault()
   form.reset()
