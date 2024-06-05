@@ -34,3 +34,14 @@ function total(tedadd) {
     console.log(`jamekolnomreh>>> ${jamkolscore}`);
     computing(jamkolscore)
 }
+
+// This function is to get the average scores
+function computing(jamkolscore) {
+    let miangin = jamkolscore / 4;
+    if (miangin >= 12) {
+        alert("bariakakalakka")
+    } else {
+        alert("vaaaaaaaaaaaaaaaaayyyyyyyyyyyyyyyyyyyyyyyyyyyy")
+    }
+    console.log("miangin>> ", miangin);
+}
