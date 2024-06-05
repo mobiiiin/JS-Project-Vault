@@ -19,7 +19,17 @@ CreateOptionElement.prototype.createOption = function () {
     return option
 }
 
+ShowTheYearOfProductionOfCars()
+// This function displays the years of the car 
+// From this year to 20 years ago
+function ShowTheYearOfProductionOfCars() {
+    let txtContent = 2005;
+    for (let currentYear = new Date().getFullYear(); currentYear >= txtContent; currentYear--) {
+        let options = new CreateOptionElement("year", currentYear)
+        selectedInHtml().append(options.createOption())
 
+    }
+}
 
 
 
