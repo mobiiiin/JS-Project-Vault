@@ -31,7 +31,7 @@ function total(tedadd) {
         jamkolscore += tedadd[i];
 
     }
-    console.log(`jamekolnomreh>>> ${jamkolscore}`);
+    console.log(`total scores>>> ${jamkolscore}`);
     computing(jamkolscore)
 }
 
@@ -43,5 +43,5 @@ function computing(jamkolscore) {
     } else {
         alert("vaaaaaaaaaaaaaaaaayyyyyyyyyyyyyyyyyyyyyyyyyyyy")
     }
-    console.log("miangin>> ", miangin);
+    console.log("average scores>> ", miangin);
 }
