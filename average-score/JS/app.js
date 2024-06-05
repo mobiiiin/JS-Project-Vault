@@ -21,4 +21,16 @@ function checkValueScore(tedadd) {
     total(tedadd)
     console.log(tedadd);
 }
+
 getAScore()
+
+// This function for total scores
+function total(tedadd) {
+    let jamkolscore = 0;
+    for (let i = 0; i < tedadd.length; i++) {
+        jamkolscore += tedadd[i];
+
+    }
+    console.log(`jamekolnomreh>>> ${jamkolscore}`);
+    computing(jamkolscore)
+}
