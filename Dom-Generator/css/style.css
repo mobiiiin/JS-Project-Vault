@@ -16,4 +16,17 @@ body {
   height: 20px;
   width: 180px;
   border-color: #002aff;
+}
+
+.background-color-images {
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 100px;
+  margin-top: 50px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
