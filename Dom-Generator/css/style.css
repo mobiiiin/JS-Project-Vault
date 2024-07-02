@@ -29,4 +29,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.background-color-images .image-khalije-fars {
+  display: block;
+  margin-top: -40px;
+  width: 220px;
+  height: 200px;
+  border-radius: 2px;
 }/*# sourceMappingURL=style.css.map */
