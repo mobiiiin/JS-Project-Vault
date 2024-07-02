@@ -1,0 +1,50 @@
+import domGenerator from "/node_modules/dom-generator/dist/domGenerator.js";
+
+// this function just for dom-generators
+function domGenerators() {
+    // create div element whit dom-generator
+    let parentDivNameUniverSities = domGenerator({
+        tag: "div",
+        attributes: {
+            class: "parent-name-universities",
+        }
+    })
+
+    // create input element whit dom-generator
+    let nameUniverSities = domGenerator({
+        tag: "input",
+        attributes: {
+            id: "name-universities",
+            placeholder: "just type name your university",
+            type: "text"
+        }
+    })
+
+    // create div element whit dom-generator
+    let backgroundColorImages = domGenerator({
+        tag: "div",
+        attributes: {
+            class: "background-color-images",
+
+        }
+    })
+
+    // create img element whit dom-generator
+    let khalijeFars = domGenerator({
+        tag: "img",
+        attributes: {
+            class: "image-khalije-fars",
+            src: "./assets/images/khalije-fars.png",
+
+        },
+    })
+
+    // create p element whit dom-generator
+    let textContenKhalijeFars = domGenerator({
+        tag: "p",
+        attributes: { id: "text-content-khalije-fars" },
+        properties: { textContent: "daneshgah khalije fars" }
+    })
+}
+domGenerators()
+
