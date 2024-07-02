@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background: #00ff26;
+}
+
+.parent-name-universities {
+  background-color: #ff00e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
