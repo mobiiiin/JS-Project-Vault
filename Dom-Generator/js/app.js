@@ -55,7 +55,7 @@ function addToBody(parentDivNameUniverSities, nameUniverSities, backgroundColorI
     document.body.append(parentDivNameUniverSities);
     parentDivNameUniverSities.append(nameUniverSities);
 
-    // this eventlistener for seda zadan function foundUniversity
+    // This event listener is used to call the foundUniversity function
     nameUniverSities.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
             foundUniversity(nameUniverSities.value, backgroundColorImages, khalijeFars, textContenKhalijeFars)
