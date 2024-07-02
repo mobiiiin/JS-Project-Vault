@@ -55,4 +55,26 @@ function addToBody(parentDivNameUniverSities, nameUniverSities, backgroundColorI
     document.body.append(parentDivNameUniverSities);
     parentDivNameUniverSities.append(nameUniverSities);
 
+    // this eventlistener for seda zadan function foundUniversity
+    nameUniverSities.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            foundUniversity(nameUniverSities.value, backgroundColorImages, khalijeFars, textContenKhalijeFars)
+        }
+    })
+}
+
+// This function is used to check whether the input value is the same as specified or not
+function foundUniversity(inputValue, backgroundColorImages, khalijeFars, textContenKhalijeFars) {
+    if (inputValue.includes("خلیح فارس")) {
+        // sending to body
+        document.body.append(backgroundColorImages);
+        backgroundColorImages.append(khalijeFars);
+        backgroundColorImages.append(textContenKhalijeFars);
+
+        
+    }
+
+    else {
+        alert("فقظ اسم دانشکاه و همجنین غلط املایی نداشته باشه");
+    }
 }
