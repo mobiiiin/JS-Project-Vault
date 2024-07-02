@@ -8,4 +8,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
+}
+
+#name-universities {
+  padding: 10px;
+  border-radius: 8111px;
+  height: 20px;
+  width: 180px;
+  border-color: #002aff;
 }/*# sourceMappingURL=style.css.map */
