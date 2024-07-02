@@ -45,6 +45,14 @@ function domGenerators() {
         attributes: { id: "text-content-khalije-fars" },
         properties: { textContent: "daneshgah khalije fars" }
     })
+    addToBody(parentDivNameUniverSities, nameUniverSities, backgroundColorImages, khalijeFars, textContenKhalijeFars);
 }
 domGenerators()
 
+// this function for adding(append) elements to body
+function addToBody(parentDivNameUniverSities, nameUniverSities, backgroundColorImages, khalijeFars, textContenKhalijeFars) {
+    // sending to body
+    document.body.append(parentDivNameUniverSities);
+    parentDivNameUniverSities.append(nameUniverSities);
+
+}
