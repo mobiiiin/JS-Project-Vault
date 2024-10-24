@@ -82,7 +82,6 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 250px;
   z-index: 2;
-  //   display: block;
 }
 
 .Header-banner {
@@ -271,6 +270,34 @@ span {
       font-size: 16px;
       color: #a5a5a5;
     }
+  }
+}
+
+.container-slider{
+  width: 100%;
+  height: 270px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slider{
+    background: #825aaa;
+    height: 180px;
+    width: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    outline: none;
+    div{
+      // position: relative;
+      overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  margin-left: 2px;
+  margin-right: 2px;
+}
   }
 }
 
