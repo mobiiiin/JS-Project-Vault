@@ -99,42 +99,46 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
 }
 
 .info {
+  vertical-align: middle;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 .info a:nth-child(3) {
   background-color: #07c;
   color: white;
   vertical-align: middle;
   border-radius: 5px;
-  padding: 10px 70px;
+  padding: 10px 90px;
   border-radius: 25px;
   margin: 0 16px 0 0;
-  font-size: x-large;
+  font-size: 18px;
 }
 .info a:nth-child(1) {
+  display: flex;
   margin-left: 15px;
-  color: #696969;
-  vertical-align: middle;
   border-radius: 5px;
   padding: 12px 20px;
   border-radius: 25px;
-  font-size: large;
   border: 1px solid;
   border-color: rgb(208, 208, 208);
 }
+.info a:nth-child(1) span {
+  color: #696969;
+  vertical-align: middle;
+  font-size: 15px;
+}
 .info a:nth-child(1) img {
   vertical-align: text-top;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-left: 5px;
   color: rgb(165, 162, 162);
 }
@@ -142,27 +146,32 @@ span {
   background-color: #84caff;
 }
 .info .input {
-  width: 333px;
+  width: 444px;
   padding: 12px 0;
   border-radius: 25px;
   border: 1px solid;
   border-color: rgb(208, 208, 208);
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 .info .input img {
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-right: 10px;
 }
 .info input {
-  display: inline;
-  width: 280px;
-  font-size: 17px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 330px;
+  height: 100%;
+  font-size: 15px;
+  font-family: "VAZIR";
   border-radius: 25px;
   border: none;
   border-color: none;
   outline: none;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 .whats-jobs {
@@ -173,7 +182,8 @@ span {
 }
 .whats-jobs h1 {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  margin-right: -3px;
   width: 555px;
 }
 .whats-jobs .jobs {
@@ -190,16 +200,17 @@ span {
   font-size: 15px;
   margin-top: 5px;
   font-weight: 100;
-  color: black;
+  color: #8b8b8b;
 }
 .whats-jobs .jobs .khone-tekoni img {
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
 }
 
 .service {
   background: #f9f9f9;
   align-items: center;
+  height: 330px;
   display: block;
   margin: 50px auto;
   width: 100%;
@@ -207,11 +218,14 @@ span {
 .service h1 {
   margin-bottom: -20px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
   width: 555px;
+  height: 100px;
 }
 .service .services {
-  margin-top: 50px;
+  margin-top: 35px;
   display: block;
   display: flex;
   justify-content: center;
@@ -229,7 +243,8 @@ span {
   margin: 20px 0 0 0;
   display: flex;
   justify-content: right;
-  color: black;
+  color: #4f4f4f;
+  margin-top: 5px;
 }
 .service .services .khone-tekoni img {
   width: 250px;
@@ -243,7 +258,8 @@ span {
 }
 .how-work h1 {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  margin-right: 16px;
   width: 601px;
 }
 .how-work .request {
@@ -256,10 +272,10 @@ span {
   height: 300px;
 }
 .how-work .request span {
-  margin-top: 10px;
   font-size: 25px;
 }
 .how-work .request p {
+  margin-top: 0;
   font-size: 16px;
   color: #a5a5a5;
 }
