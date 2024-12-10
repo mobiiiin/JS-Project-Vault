@@ -79,12 +79,12 @@ a {
   border-radius: 25px;
 }
 .header .sidebar {
-  border-left: 1px solid rgb(226, 226, 226); /* Correct way to apply a right border */
+  border-left: 1px solid rgb(226, 226, 226);
   position: fixed;
-  right: -250px; /* Start off-screen */
+  right: -250px;
   top: 65px;
   bottom: 0;
-  width: 250px; /* Adjust as needed */
+  width: 250px;
   background: white;
   transition: right 0.3s ease;
   overflow-y: auto;
@@ -95,23 +95,9 @@ a {
   width: 80%;
   margin: 0 auto;
 }
-.header .sidebar.visible {
-  right: 0; /* Slide-in effect */
-}
 .header .sidebar div {
   display: flex;
   align-items: center;
-}
-.header .up,
-.header .down {
-  border-top: 1px solid #e0e0e0;
-}
-.header .up {
-  padding: 0;
-  margin: 0;
-}
-.header .down {
-  margin-top: 10px;
 }
 .header .sidebar ul {
   padding: 0;
@@ -143,7 +129,7 @@ a {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.header .sidebar ul li:click {
+.header .sidebar .sidebar ul li:click {
   visibility: click;
   background-color: #0068b3;
 }
@@ -152,6 +138,20 @@ a {
   background: #ffffff;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+.header .sidebar.visible {
+  right: 0;
+}
+.header .up,
+.header .down {
+  border-top: 1px solid #e0e0e0;
+}
+.header .up {
+  padding: 0;
+  margin: 0;
+}
+.header .down {
+  margin-top: 10px;
 }
 .header .left {
   display: flex;
