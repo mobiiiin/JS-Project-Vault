@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "VAZIR";
+  src: url("../../public/font/vazir-font-v16.1.0/Vazir-Medium.ttf");
+}
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  font-family: VAZIR;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 760px) {
+  .header .left svg {
+    display: none;
+    cursor: pointer;
+  }
+}
 @media (max-width: 768px) {
   body * {
     max-width: 100%;
@@ -37,10 +78,35 @@
   .move .img-underheader {
     display: none;
   }
-}
-@media (min-width: 760px) {
-  .header .left svg {
-    display: none;
-    cursor: pointer;
+  .move .Header-banner-bg {
+    position: relative;
+    margin: 8px 0 0 0;
+    margin: auto 0;
+    width: 100%;
+    height: 250px;
+    background-image: url(../../../public/images/Header-banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 2;
+  }
+  .move .Header-banner {
+    position: absolute;
+    right: 0%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 185px;
+    height: 185px;
+    background-image: url(../../../public/images/Header-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .move span {
+    position: relative;
+    top: 0;
+    font-size: larger;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

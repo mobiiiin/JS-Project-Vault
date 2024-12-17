@@ -23,7 +23,7 @@ function placeMenu() {
     move.style.margin = "0 244px 0 0 "
   }
   else {
-    move.style.margin = "0 0 0 0 "
+    move.style.margin = "0 0 0 0 ";
   }
 }
 
