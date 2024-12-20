@@ -20,6 +20,12 @@ li {
 a {
   text-decoration: none;
 }
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: block;
+}
 // header styles
 .header {
   background: #ffffff;
@@ -187,18 +193,21 @@ a {
   z-index: 1;
   margin-top: 80px;
 }
+
 .Header-banner-bg {
   margin: 5px 0 0 0;
   width: 100%;
   height: 250px;
   position: relative;
-  background-image: url(../../public/images/Header-banner-bg.png);
+  background-image: url(https://ostadkar.ir/assets/Header-banner.svg);
   background-repeat: no-repeat;
   background-size: 100% 250px;
   z-index: 2;
 }
+
 .Header-banner {
   position: absolute;
+
   right: 37.3%;
   top: 21%;
   width: 380px;
@@ -207,6 +216,7 @@ a {
   background-repeat: no-repeat;
   background-size: 380px 185px;
 }
+
 span {
   display: flex;
   justify-content: center;
@@ -214,6 +224,7 @@ span {
   font-size: 35px;
   font-weight: 900;
 }
+
 .info {
   vertical-align: middle;
   display: flex;
@@ -252,6 +263,7 @@ span {
       color: rgb(165, 162, 162);
     }
   }
+
   a:nth-child(1):hover {
     background-color: #84caff;
   }
