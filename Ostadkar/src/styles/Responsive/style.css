@@ -188,4 +188,38 @@ body {
   .mobile-only .info a:nth-child(3):hover {
     background-color: #19326c;
   }
+  .whats-jobs {
+    background: #f4f4f4;
+    text-align: center;
+  }
+  .whats-jobs .jobs {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 35px;
+  }
+  .whats-jobs .jobs .khone-tekoni {
+    width: calc(39% - 20px);
+    text-align: center;
+  }
+  .whats-jobs .jobs .khone-tekoni :nth-child(7),
+  .whats-jobs .jobs .khone-tekoni :nth-child(8) {
+    width: calc(50% - 10px);
+  }
+  .whats-jobs .jobs .khone-tekoni img {
+    width: 63px;
+    height: 63px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .whats-jobs .jobs .khone-tekoni span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1F1F1F;
+  }
 }/*# sourceMappingURL=style.css.map */
