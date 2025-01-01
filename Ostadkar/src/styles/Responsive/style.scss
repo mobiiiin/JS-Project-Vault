@@ -218,19 +218,19 @@ body {
       text-align: center;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
       margin-right: 35px;
       .khone-tekoni {
-        width: calc(39% - 20px); 
+        width: calc(39% - 20px);
         text-align: center;
         :nth-child(7),
         :nth-child(8) {
-          width: calc(50% - 10px); 
+          width: calc(50% - 10px);
         }
         img {
-          width: 63px; 
-          height: 63px; 
-          object-fit: cover; 
+          width: 63px;
+          height: 63px;
+          object-fit: cover;
           margin: 0 auto;
           margin-top: 15px;
           margin-bottom: 0;
@@ -239,8 +239,70 @@ body {
           display: block;
           margin-top: 10px;
           font-size: 16px;
-          color:#1F1F1F ;
-         
+          color: #1f1f1f;
+        }
+      }
+    }
+  }
+  // Styles of the proposed services section
+  .service {
+    text-align: right;
+    background: #f4f4f4;
+    height: 300px;
+    h1 {
+      display: flex;
+      justify-content: right;
+      margin: -35px 0;
+      margin-right: 9px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .services {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 10px 0;
+      scroll-behavior: smooth;
+      width: 100%;
+      :nth-last-child(4) {
+        a {
+          margin-right: 15px;
+        }
+      }
+      :nth-last-child(3) {
+        a {
+          margin-right: 15px;
+        }
+      }
+      :nth-last-child(2) {
+        a {
+          margin-right: 15px;
+        }
+      }
+      :nth-last-child(2) {
+        a {
+          margin-right: 15px;
+        }
+      }
+      .khone-tekoni {
+        flex: 0 0 auto;
+        justify-content: center;
+        text-align: center;
+        width: 140px;
+        margin-right: -35px;
+        position: relative;
+        right: 50px;
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        }
+        span {
+          display: block;
+          font-size: 14px;
+          margin-top: 0px;
+          color: #333;
+          margin-left: 35px;
         }
       }
     }

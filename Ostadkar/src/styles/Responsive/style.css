@@ -220,6 +220,61 @@ body {
     display: block;
     margin-top: 10px;
     font-size: 16px;
-    color: #1F1F1F;
+    color: #1f1f1f;
+  }
+  .service {
+    text-align: right;
+    background: #f4f4f4;
+    height: 300px;
+  }
+  .service h1 {
+    display: flex;
+    justify-content: right;
+    margin: -35px 0;
+    margin-right: 9px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .service .services {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  .service .services :nth-last-child(4) a {
+    margin-right: 15px;
+  }
+  .service .services :nth-last-child(3) a {
+    margin-right: 15px;
+  }
+  .service .services :nth-last-child(2) a {
+    margin-right: 15px;
+  }
+  .service .services :nth-last-child(2) a {
+    margin-right: 15px;
+  }
+  .service .services .khone-tekoni {
+    flex: 0 0 auto;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
+    margin-right: -35px;
+    position: relative;
+    right: 50px;
+  }
+  .service .services .khone-tekoni img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .service .services .khone-tekoni span {
+    display: block;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #333;
+    margin-left: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
