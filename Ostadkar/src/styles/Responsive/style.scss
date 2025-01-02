@@ -307,4 +307,36 @@ body {
       }
     }
   }
+  // The styles of the section "How does the work master work?"
+  .how-work {
+    h1 {
+      display: flex;
+      justify-content: right;
+      font-size: 20px;
+    }
+    .container-how-work-section {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      margin-top: 5px;
+      .request {
+        margin-right: -1px;
+        img {
+          background: #ffffff;
+          width: 240px;
+          height: 144px;
+          object-fit: cover;
+          max-width: 240px;
+          max-height: 144px;
+        }
+        span {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

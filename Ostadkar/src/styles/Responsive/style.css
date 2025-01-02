@@ -277,4 +277,34 @@ body {
     color: #333;
     margin-left: 35px;
   }
+  .how-work h1 {
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+  }
+  .how-work .container-how-work-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 5px;
+  }
+  .how-work .container-how-work-section .request {
+    margin-right: -1px;
+  }
+  .how-work .container-how-work-section .request img {
+    background: #ffffff;
+    width: 240px;
+    height: 144px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 240px;
+    max-height: 144px;
+  }
+  .how-work .container-how-work-section .request span {
+    font-size: 16px;
+  }
+  .how-work .container-how-work-section .request p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
